@@ -1,208 +1,115 @@
-<h1 style="text-align: center; color: #875A7B; margin-bottom: 20px;">SKUFORGE | Advanced SKU Generator</h1>
-<p style="text-align: center; font-size: 18px; font-style: italic; margin-bottom: 30px;"><strong>Forge Your SKU, Perfect Your Inventory</strong></p>
-
-<div style="background: #f8f9fa; padding: 20px; border-radius: 5px; margin-bottom: 30px;">
-    <h2>Overview</h2>
-    <p>SKUFORGE is a powerful, enterprise-grade SKU generation solution designed to automatically create unique, consistent, and meaningful SKU codes for products and product variants. With its intuitive pattern builder and flexible configuration options, SKUFORGE eliminates manual SKU entry errors and streamlines your inventory management process.</p>
-    <p>Whether you're managing a small catalog or thousands of products, SKUFORGE adapts to your business rules and automatically generates SKUs that follow your exact specifications.</p>
-</div>
-
-<div style="margin-bottom: 30px;">
-    <h2>Key Advantages</h2>
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
-        <div style="background: #e8f4f8; padding: 15px; border-radius: 5px; border-left: 4px solid #875A7B;">
-            <h3 style="margin-top: 0;">Time-Saving Automation</h3>
-            <p>Eliminate hours of manual SKU entry. SKUs are generated automatically when products are created, saving valuable time and reducing human error.</p>
-        </div>
-        <div style="background: #e8f4f8; padding: 15px; border-radius: 5px; border-left: 4px solid #875A7B;">
-            <h3 style="margin-top: 0;">Flexible Pattern Builder</h3>
-            <p>Create custom SKU patterns using drag-and-drop components. Mix and match product names, categories, attributes, dates, sequences, and more.</p>
-        </div>
-        <div style="background: #e8f4f8; padding: 15px; border-radius: 5px; border-left: 4px solid #875A7B;">
-            <h3 style="margin-top: 0;">Uniqueness Validation</h3>
-            <p>Built-in validation ensures every SKU is unique across your entire product catalog, preventing duplicate codes and data conflicts.</p>
-        </div>
-        <div style="background: #e8f4f8; padding: 15px; border-radius: 5px; border-left: 4px solid #875A7B;">
-            <h3 style="margin-top: 0;">Bulk Generation</h3>
-            <p>Generate SKUs for existing products in bulk using the intuitive wizard. Choose to override existing SKUs or only fill empty ones.</p>
-        </div>
-        <div style="background: #e8f4f8; padding: 15px; border-radius: 5px; border-left: 4px solid #875A7B;">
-            <h3 style="margin-top: 0;">Variant Support</h3>
-            <p>Intelligent handling of product variants with attribute-based SKU components. Each variant gets a unique, meaningful SKU code.</p>
-        </div>
-        <div style="background: #e8f4f8; padding: 15px; border-radius: 5px; border-left: 4px solid #875A7B;">
-            <h3 style="margin-top: 0;">Manual Override Protection</h3>
-            <p>Respects manually entered SKUs. Your custom codes are never overwritten unless you explicitly choose to regenerate them.</p>
-        </div>
-    </div>
-</div>
-
-<div style="margin-bottom: 30px;">
-    <h2>Key Features</h2>
-    <ul style="line-height: 1.8;">
-        <li><strong>SKU Pattern Builder UI:</strong> Intuitive drag-and-drop interface for creating complex SKU patterns</li>
-        <li><strong>Pattern Components:</strong>
-            <ul>
-                <li><strong>Product Name:</strong> Extract first N characters (with uppercase/lowercase options)</li>
-                <li><strong>Category:</strong> Use category name or abbreviation</li>
-                <li><strong>Attributes:</strong> Include variant attributes (Color, Size, etc.)</li>
-                <li><strong>Date:</strong> Multiple formats (YYYY, YYMM, YYMMDD, etc.)</li>
-                <li><strong>Sequence:</strong> Auto-incrementing numbers with customizable padding</li>
-                <li><strong>Company:</strong> Company code or name abbreviation</li>
-                <li><strong>Fixed Text:</strong> Custom prefixes, suffixes, or separators</li>
-            </ul>
-        </li>
-        <li><strong>Automatic Generation:</strong> SKUs generated automatically on product creation</li>
-        <li><strong>Bulk Generation Wizard:</strong> Generate SKUs for multiple products at once</li>
-        <li><strong>Uniqueness Validation:</strong> Prevents duplicate SKUs across all products</li>
-        <li><strong>Case Transformation:</strong> Convert text to uppercase, lowercase, or keep original</li>
-        <li><strong>Custom Separators:</strong> Add separators between pattern components</li>
-    </ul>
-</div>
-
-<div style="margin-bottom: 30px;">
-    <h2>Screenshots</h2>
-    <p>The screenshots below demonstrate key features of SKUFORGE:</p>
-    <ul style="line-height: 1.8;">
-        <li><strong>Create New SKU Pattern:</strong> Design your SKU pattern with customizable components using the intuitive interface</li>
-        <li><strong>Configure Pattern Components:</strong> Set up pattern components with drag-and-drop functionality, including product names, categories, attributes, dates, sequences, and fixed text</li>
-        <li><strong>Generate SKU Wizard:</strong> Bulk generate SKUs for existing products with options to override or only fill empty SKU fields</li>
-    </ul>
-    <p><em>Note: Screenshots are displayed automatically by the Odoo Apps marketplace from the module's image gallery.</em></p>
-</div>
-
-<div style="background: #fff3cd; padding: 20px; border-radius: 5px; border-left: 4px solid #ffc107; margin-bottom: 30px;">
-    <h2>How to Use SKUFORGE</h2>
+<h1 style="text-align:center;color:#875A7B;margin-bottom:10px;">
+    SKUFORGE – Advanced SKU Generator for Odoo
+    </h1>
     
-    <h3>Step 1: Installation</h3>
-    <ol style="line-height: 1.8;">
-        <li>Install the SKUFORGE module from the Odoo Apps</li>
-        <li>Wait for the installation to complete</li>
-        <li>The module will be available in your Inventory menu</li>
-    </ol>
-
-    <h3>Step 2: Create Your First SKU Pattern</h3>
-    <ol style="line-height: 1.8;">
-        <li>Navigate to <strong>Inventory → Configuration → SKU Configurations</strong></li>
-        <li>Click <strong>Create</strong> to add a new pattern</li>
-        <li>Enter a descriptive name for your pattern (e.g., "Standard Product SKU")</li>
-        <li>In the <strong>Components</strong> tab, add pattern components:
-            <ul>
-                <li>Click <strong>Add a line</strong> to add components</li>
-                <li>Select the component type (Fixed Text, Product Name, Category, etc.)</li>
-                <li>Configure each component's settings (length, case, format, etc.)</li>
-                <li>Use the drag handle to reorder components</li>
-                <li>Add separators between components if needed</li>
-            </ul>
-        </li>
-        <li>Check <strong>Default Pattern</strong> to make it the default for new products</li>
-        <li>Click <strong>Save</strong></li>
-    </ol>
-
-    <h3>Step 3: Example Pattern Configuration</h3>
-    <p>Here's an example of a common SKU pattern:</p>
-    <div style="background: #f8f9fa; padding: 15px; border-radius: 5px; font-family: monospace; margin: 10px 0;">
-        <strong>Pattern:</strong> PROD-ABC-001<br/>
-        <strong>Components:</strong><br/>
-        1. Fixed Text: "PROD-"<br/>
-        2. Product Name: First 3 characters (Uppercase)<br/>
-        3. Separator: "-"<br/>
-        4. Sequence: 3-digit padding (001, 002, 003...)
-    </div>
-
-    <h3>Step 4: Automatic SKU Generation</h3>
-    <ol style="line-height: 1.8;">
-        <li>Create a new product in <strong>Inventory → Products → Products</strong></li>
-        <li>Leave the <strong>Internal Reference</strong> (SKU) field empty</li>
-        <li>Fill in other product details (name, category, etc.)</li>
-        <li>Click <strong>Save</strong></li>
-        <li>The SKU will be automatically generated based on your default pattern!</li>
-    </ol>
-
-    <h3>Step 5: Bulk Generate SKUs for Existing Products</h3>
-    <ol style="line-height: 1.8;">
-        <li>Go to <strong>Inventory → Products → Products</strong></li>
-        <li>Select multiple products from the list view</li>
-        <li>Click <strong>Action → Generate SKU</strong></li>
-        <li>In the wizard:
-            <ul>
-                <li>Choose whether to override existing SKUs or only fill empty ones</li>
-                <li>Click <strong>Generate</strong></li>
-            </ul>
-        </li>
-        <li>SKUs will be generated for all selected products</li>
-    </ol>
-
-    <h3>Step 6: Manual SKU Override</h3>
-    <p>If you need to manually set a SKU for a specific product:</p>
-    <ol style="line-height: 1.8;">
-        <li>Open the product form</li>
-        <li>Enter your custom SKU in the <strong>Internal Reference</strong> field</li>
-        <li>Save the product</li>
-        <li>Your manual SKU will be preserved and never overwritten automatically</li>
-    </ol>
-</div>
-
-<div style="background: #d1ecf1; padding: 20px; border-radius: 5px; border-left: 4px solid #0c5460; margin-bottom: 30px;">
-    <h2>Use Cases and Examples</h2>
+    <p style="text-align:center;font-size:18px;margin-bottom:25px;">
+    <strong>Forge your SKUs. Standardize your inventory. Scale with confidence.</strong>
+    </p>
     
-    <h3>Example 1: Simple Product SKU</h3>
-    <p><strong>Pattern:</strong> Category (3 chars) + Product Name (3 chars) + Sequence (4 digits)</p>
-    <p><strong>Result:</strong> ELE-LAP-0001, ELE-PHO-0002, CLT-SHI-0003</p>
-
-    <h3>Example 2: Date-Based SKU</h3>
-    <p><strong>Pattern:</strong> Year + Month + Category (2 chars) + Sequence (3 digits)</p>
-    <p><strong>Result:</strong> 202412-EL-001, 202412-EL-002</p>
-
-    <h3>Example 3: Variant SKU with Attributes</h3>
-    <p><strong>Pattern:</strong> Product Name (3 chars) + Color Attribute + Size Attribute + Sequence</p>
-    <p><strong>Result:</strong> TSH-RED-M-001, TSH-BLU-L-002</p>
-
-    <h3>Example 4: Company-Specific SKU</h3>
-    <p><strong>Pattern:</strong> Company Code (3 chars) + Category (2 chars) + Year + Sequence</p>
-    <p><strong>Result:</strong> ABC-EL-2024-001</p>
-</div>
-
-<div style="margin-bottom: 30px;">
-    <h2>Technical Details</h2>
-    <ul style="line-height: 1.8;">
-        <li><strong>Compatibility:</strong> Odoo 18.0</li>
+    <hr/>
+    
+    <div style="margin-bottom:30px;">
+      <h2>Why SKUFORGE?</h2>
+      <p>
+        SKUFORGE helps businesses eliminate manual SKU creation by automatically generating
+        <strong>structured, unique, and meaningful SKU codes</strong> for products and variants.
+      </p>
+      <p>
+        Define your SKU logic once and let Odoo generate consistent product codes
+        across your entire catalog, from small inventories to enterprise-scale product ranges.
+      </p>
+    </div>
+    
+    <div style="background:#f8f9fa;padding:20px;border-radius:6px;margin-bottom:30px;">
+      <h2>Key Benefits</h2>
+      <ul style="line-height:1.9;">
+        <li><strong>Time saving:</strong> Automatic SKU generation on product creation</li>
+        <li><strong>Consistency:</strong> Enforce company-wide SKU standards</li>
+        <li><strong>Uniqueness:</strong> Built-in validation prevents duplicate SKUs</li>
+        <li><strong>Flexibility:</strong> Fully configurable SKU patterns</li>
+        <li><strong>Variant ready:</strong> Intelligent SKU logic for product variants</li>
+        <li><strong>Manual safe:</strong> Manually entered SKUs are never overwritten</li>
+      </ul>
+    </div>
+    
+    <div style="margin-bottom:30px;">
+      <h2>Main Features</h2>
+      <ul style="line-height:1.9;">
+        <li>Configurable SKU pattern builder</li>
+        <li>Automatic SKU generation on product creation</li>
+        <li>Bulk SKU generation wizard for existing products</li>
+        <li>Attribute-based SKU generation for product variants</li>
+        <li>Custom formatting: case, separators, and padding</li>
+      </ul>
+    </div>
+    
+    <div style="background:#eef2f7;padding:20px;border-radius:6px;margin-bottom:30px;">
+      <h2>Available SKU Components</h2>
+      <ul style="line-height:1.9;">
+        <li>Product name (first N characters)</li>
+        <li>Product category</li>
+        <li>Variant attributes (color, size, etc.)</li>
+        <li>Date components (year, month, day)</li>
+        <li>Automatic sequence with custom padding</li>
+        <li>Company code</li>
+        <li>Fixed text (prefixes and suffixes)</li>
+      </ul>
+    </div>
+    
+    <div style="margin-bottom:30px;">
+      <h2>Real-World Examples</h2>
+    
+      <p><strong>Electronics:</strong><br/>
+      <code>ELE-LAP-0001</code>, <code>ELE-PHO-0002</code></p>
+    
+      <p><strong>Date-based:</strong><br/>
+      <code>2024-EL-001</code>, <code>2024-EL-002</code></p>
+    
+      <p><strong>Variants:</strong><br/>
+      <code>TSH-RED-M-001</code>, <code>TSH-BLU-L-002</code></p>
+    
+      <p><strong>Multi-company:</strong><br/>
+      <code>ABC-EL-2024-001</code></p>
+    </div>
+    
+    <div style="background:#fff3cd;padding:20px;border-radius:6px;margin-bottom:30px;">
+      <h2>How It Works</h2>
+      <ol style="line-height:1.9;">
+        <li>Install the module</li>
+        <li>Create your SKU pattern in <strong>Inventory → Configuration → SKU Configurations</strong></li>
+        <li>Set a default pattern</li>
+        <li>Create products and variants</li>
+        <li>SKUs are generated automatically</li>
+        <li>Use the bulk wizard for existing products</li>
+      </ol>
+    </div>
+    
+    <div style="margin-bottom:30px;">
+      <h2>Screenshots</h2>
+      <p>The screenshots above illustrate:</p>
+      <ul style="line-height:1.8;">
+        <li>SKU pattern configuration</li>
+        <li>Pattern component setup</li>
+        <li>Bulk SKU generation wizard</li>
+      </ul>
+    </div>
+    
+    <div style="background:#f8f9fa;padding:20px;border-radius:6px;margin-bottom:30px;">
+      <h2>Technical Information</h2>
+      <ul style="line-height:1.8;">
+        <li><strong>Odoo version:</strong> 18.0</li>
         <li><strong>Dependencies:</strong> product, stock</li>
         <li><strong>License:</strong> OPL-1</li>
-        <li><strong>Models Extended:</strong>
-            <ul>
-                <li><code>product.template</code> - Auto-generates SKU on product creation</li>
-                <li><code>product.product</code> - Handles variant SKU generation</li>
-            </ul>
-        </li>
-        <li><strong>New Models:</strong>
-            <ul>
-                <li><code>sku.pattern</code> - SKU pattern configuration</li>
-                <li><code>sku.pattern.component</code> - Individual pattern components</li>
-            </ul>
-        </li>
-        <li><strong>Wizards:</strong>
-            <ul>
-                <li><code>sku.generate.wizard</code> - Bulk SKU generation wizard</li>
-            </ul>
-        </li>
-    </ul>
-</div>
-
-<div style="background: #d4edda; padding: 20px; border-radius: 5px; border-left: 4px solid #28a745;">
-    <h2>Best Practices</h2>
-    <ul style="line-height: 1.8;">
-        <li><strong>Plan Your Pattern:</strong> Think about your SKU structure before creating patterns. Consider future scalability.</li>
-        <li><strong>Use Sequences:</strong> Always include a sequence component to ensure uniqueness, especially for products with similar names.</li>
-        <li><strong>Keep It Short:</strong> Shorter SKUs are easier to manage, but ensure they remain meaningful.</li>
-        <li><strong>Test Patterns:</strong> Create test products to verify your pattern generates the expected SKU format.</li>
-        <li><strong>Document Patterns:</strong> Use descriptive names for patterns to remember their purpose.</li>
-        <li><strong>Backup Before Bulk Generation:</strong> Always backup your database before running bulk SKU generation on large product sets.</li>
-    </ul>
-</div>
-
-<div style="text-align: center; margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 5px;">
-    <h2>Ready to Get Started?</h2>
-    <p style="font-size: 16px;">Install SKUFORGE today and transform your product management workflow. Say goodbye to manual SKU entry and hello to automated, consistent product codes!</p>
-    <p style="font-size: 14px; color: #666;"><strong>Forge Your SKU, Perfect Your Inventory</strong></p>
-</div>
+        <li><strong>Multi-company:</strong> Supported</li>
+      </ul>
+    </div>
+    
+    <div style="text-align:center;background:#e8f4f8;padding:25px;border-radius:6px;">
+      <h2>Ready to Automate Your SKUs?</h2>
+      <p style="font-size:16px;">
+        Install <strong>SKUFORGE</strong> and bring structure, consistency,
+        and automation to your product catalog.
+      </p>
+      <p style="color:#875A7B;"><strong>Forge your SKU. Perfect your inventory.</strong></p>
+    </div>
+    
