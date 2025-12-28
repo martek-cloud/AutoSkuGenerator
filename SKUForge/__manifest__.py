@@ -4,7 +4,7 @@
     "summary": "Generate structured, unique, and meaningful SKU codes for products and variants.",
     "category": "Inventory",
     "author": "Trae AI",
-    "website": "https://www.clevercube.com",
+    "website": "https://www.clevercubeai.com",
     "license": "OPL-1",
 
     "price": 21.35,
