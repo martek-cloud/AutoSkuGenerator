@@ -1,5 +1,5 @@
 {
-    "name": "SKUFORGE | Advanced SKU Generator",
+    "name": "Advanced SKUFORGE | Advanced SKU Generator",
     "version": "18.0.1.0.0",
     "summary": "Generate structured, unique, and meaningful SKU codes for products and variants.",
     "category": "Inventory",
