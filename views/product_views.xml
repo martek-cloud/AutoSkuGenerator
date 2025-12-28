@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Add Generate SKU button to product template form view (optional - for single product generation) -->
+    <record id="product_template_sku_button_view" model="ir.ui.view">
+        <field name="name">product.template.sku.button.view</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <header position="inside">
+                <button name="action_generate_sku" string="Generate SKU" type="object" class="btn-secondary"/>
+            </header>
+        </field>
+    </record>
+</odoo>

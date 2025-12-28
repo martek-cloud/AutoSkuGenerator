@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_sku_generate_wizard_form" model="ir.ui.view">
+        <field name="name">sku.generate.wizard.form</field>
+        <field name="model">sku.generate.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Generate SKU">
+                <group>
+                    <field name="target_model" readonly="1"/>
+                    <field name="override_existing"/>
+                </group>
+                <footer>
+                    <button name="action_generate" string="Generate" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sku_generate_wizard_template" model="ir.actions.act_window">
+        <field name="name">Generate SKU</field>
+        <field name="res_model">sku.generate.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="context">{'default_target_model': 'product_template'}</field>
+        <field name="binding_model_id" ref="product.model_product_template"/>
+        <field name="binding_view_types">list</field>
+    </record>
+    
+    <record id="action_sku_generate_wizard_product" model="ir.actions.act_window">
+        <field name="name">Generate SKU</field>
+        <field name="res_model">sku.generate.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="context">{'default_target_model': 'product_product'}</field>
+        <field name="binding_model_id" ref="product.model_product_product"/>
+        <field name="binding_view_types">list</field>
+    </record>
+</odoo>

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sku_pattern,sku.pattern,model_sku_pattern,base.group_user,1,1,1,1
+access_sku_pattern_component,sku.pattern.component,model_sku_pattern_component,base.group_user,1,1,1,1
+access_sku_generate_wizard,sku.generate.wizard,model_sku_generate_wizard,base.group_user,1,1,1,1
