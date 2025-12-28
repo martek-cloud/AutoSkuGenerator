@@ -3,7 +3,7 @@
     "version": "18.0.1.0.0",
     "summary": "Generate structured, unique, and meaningful SKU codes for products and variants.",
     "category": "Inventory",
-    "author": "Trae AI",
+    "author": "Clever Cube Ai",
     "website": "https://www.clevercubeai.com",
     "license": "OPL-1",
 
