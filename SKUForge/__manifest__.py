@@ -7,7 +7,7 @@
     "website": "https://www.odoo.com",
     "license": "OPL-1",
 
-    "price": 25.00,
+    "price": 21.35,
     "currency": "EUR",
 
     "depends": [
