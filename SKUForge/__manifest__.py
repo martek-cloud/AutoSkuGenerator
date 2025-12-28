@@ -1,10 +1,10 @@
 {
-    "name": "SKUFORGE – Advanced SKU Generator",
+    "name": "SKUFORGE | Advanced SKU Generator",
     "version": "18.0.1.0.0",
     "summary": "Generate structured, unique, and meaningful SKU codes for products and variants.",
     "category": "Inventory",
     "author": "Trae AI",
-    "website": "https://www.odoo.com",
+    "website": "https://www.clevercube.com",
     "license": "OPL-1",
 
     "price": 21.35,
