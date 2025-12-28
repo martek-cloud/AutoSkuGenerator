@@ -1,10 +1,11 @@
-# Auto SKU Generator for Odoo
+# SKUFORGE - Advanced SKU Generator for Odoo
 
 **Technical Name**: `auto_sku_generator`  
+**Commercial Name**: SKUFORGE  
 **Compatibility**: Odoo 18, 19
 
 ## Overview
-This module automatically generates unique, consistent, and meaningful SKU codes (Internal Reference) for products and product variants based on customizable patterns defined by the user.
+SKUFORGE is a powerful module that automatically generates unique, consistent, and meaningful SKU codes (Internal Reference) for products and product variants based on customizable patterns defined by the user.
 
 ## Features
 - **Flexible Pattern Builder**: Define SKU structures using a drag-and-drop interface.
@@ -24,7 +25,7 @@ This module automatically generates unique, consistent, and meaningful SKU codes
 ## Installation
 1.  Place the `auto_sku_generator` folder in your Odoo addons path.
 2.  Update the App List.
-3.  Install "Auto SKU Generator".
+3.  Install "SKUFORGE".
 
 ## Configuration
 1.  Go to **Inventory > Configuration > SKU Configurations**.
