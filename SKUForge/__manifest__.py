@@ -1,38 +1,52 @@
 {
-    'name': 'SKUFORGE',
-    'version': '18.0.1.0.0',
-    'summary': 'Automatically generate unique, consistent, and meaningful SKU codes for products and variants.',
-    'category': 'Inventory/Inventory',
-    'author': 'Trae AI',
-    'website': 'https://www.odoo.com',
-    'license': 'LGPL-3',
-    'depends': ['product', 'stock'],
-    'data': [
-        'security/ir.model.access.csv',
-        'data/ir_sequence_data.xml',
-        'views/sku_pattern_views.xml',
-        'views/product_views.xml',
-        'wizard/sku_generate_wizard_views.xml',
+    "name": "SKUFORGE – Advanced SKU Generator",
+    "version": "18.0.1.0.0",
+    "summary": "Generate structured, unique, and meaningful SKU codes for products and variants.",
+    "category": "Inventory",
+    "author": "Trae AI",
+    "website": "https://www.odoo.com",
+    "license": "OPL-1",
+
+    "price": 25.00,
+    "currency": "EUR",
+
+    "depends": [
+        "product",
+        "stock"
     ],
-    'demo': [],
-    'installable': True,
-    'application': True,
-    'auto_install': False,
-    'images': ['static/description/banner.png'],
-    'description': """
+
+    "data": [
+        "security/ir.model.access.csv",
+        "data/ir_sequence_data.xml",
+        "views/sku_pattern_views.xml",
+        "views/product_views.xml",
+        "wizard/sku_generate_wizard_views.xml",
+    ],
+
+    "images": [
+        "static/description/banner.png"
+    ],
+
+    "installable": True,
+    "application": False,
+    "auto_install": False,
+
+    "description": """
 SKUFORGE
 ========
-Powerful SKU generation tool that automatically creates unique, consistent, and meaningful SKU codes for products and product variants based on customizable patterns and business rules.
+Advanced SKU generation tool designed to automatically create unique, consistent,
+and meaningful SKU codes for products and product variants using configurable
+patterns and business rules.
 
-Features:
-- **SKU Pattern Builder UI**: Drag & drop pattern components with intuitive interface.
-- **Pattern Components**: Product Name, Category, Attributes, Date, Sequence, Company, Fixed Text.
-- **Automatic Generation**: On creation or bulk update.
-- **Variant Handling**: Specific logic for variants.
-- **Manual Override**: Respects manually entered SKUs.
-- **Validation**: Ensures uniqueness across all products.
+Key Features:
+- SKU Pattern Builder with configurable components
+- Supports product names, categories, attributes, dates, sequences, companies, and fixed text
+- Automatic SKU generation on product creation or bulk updates
+- Dedicated handling for product variants
+- Manual SKU override support
+- SKU uniqueness validation across all products
 
 Configuration:
-Go to Inventory > Configuration > SKU Configurations (or Settings > Technical > SKU Configurations).
+Inventory → Configuration → SKU Configurations
     """,
 }
